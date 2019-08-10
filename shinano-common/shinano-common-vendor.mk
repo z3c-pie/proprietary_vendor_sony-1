@@ -150,6 +150,7 @@ PRODUCT_COPY_FILES += \
     vendor/sony/shinano-common/proprietary/lib/libexcal_system.so:system/lib/libexcal_system.so \
     vendor/sony/shinano-common/proprietary/lib/libidd.so:system/lib/libidd.so \
     vendor/sony/shinano-common/proprietary/lib/libkeyctrl.so:system/lib/libkeyctrl.so \
+    vendor/sony/shinano-common/proprietary/lib/libmdmdetect.so:system/lib/libmdmdetect.so \
     vendor/sony/shinano-common/proprietary/vendor/lib/libmdmdetect.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmdmdetect.so \
     vendor/sony/shinano-common/proprietary/lib/libmiscta.so:system/lib/libmiscta.so \
     vendor/sony/shinano-common/proprietary/vendor/lib/libmmcamera_interface.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_interface.so \
@@ -364,6 +365,7 @@ PRODUCT_COPY_FILES += \
     vendor/sony/shinano-common/proprietary/vendor/lib/libquipc_os_api.so:$(TARGET_COPY_OUT_VENDOR)/lib/libquipc_os_api.so \
     vendor/sony/shinano-common/proprietary/vendor/lib/libril-qc-qmi-1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libril-qc-qmi-1.so \
     vendor/sony/shinano-common/proprietary/vendor/lib/libril-qc-radioconfig.so:$(TARGET_COPY_OUT_VENDOR)/lib/libril-qc-radioconfig.so \
+    vendor/sony/shinano-common/proprietary/vendor/lib/libril-qcril-hook-oem.so:$(TARGET_COPY_OUT_VENDOR)/lib/libril-qcril-hook-oem.so \
     vendor/sony/shinano-common/proprietary/vendor/lib/librpmb.so:$(TARGET_COPY_OUT_VENDOR)/lib/librpmb.so \
     vendor/sony/shinano-common/proprietary/vendor/lib/librs_adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib/librs_adreno.so \
     vendor/sony/shinano-common/proprietary/vendor/lib/librs_adreno_sha1.so:$(TARGET_COPY_OUT_VENDOR)/lib/librs_adreno_sha1.so \
@@ -374,6 +376,7 @@ PRODUCT_COPY_FILES += \
     vendor/sony/shinano-common/proprietary/vendor/lib/libsmemlog.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsmemlog.so \
     vendor/sony/shinano-common/proprietary/vendor/lib/libssd.so:$(TARGET_COPY_OUT_VENDOR)/lib/libssd.so \
     vendor/sony/shinano-common/proprietary/vendor/lib/libsystem_health_mon.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsystem_health_mon.so \
+    vendor/sony/shinano-common/proprietary/vendor/lib/libtime_genoff.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtime_genoff.so \
     vendor/sony/shinano-common/proprietary/vendor/lib/libtzdrmgenprov.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtzdrmgenprov.so \
     vendor/sony/shinano-common/proprietary/vendor/lib/libxml.so:$(TARGET_COPY_OUT_VENDOR)/lib/libxml.so \
     vendor/sony/shinano-common/proprietary/vendor/lib/mediadrm/libwvdrmengine.so:$(TARGET_COPY_OUT_VENDOR)/lib/mediadrm/libwvdrmengine.so \
@@ -384,7 +387,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libta \
     libTimeService \
-    libtime_genoff \
     TimeService \
     qcrilmsgtunnel \
     shutdownlistener

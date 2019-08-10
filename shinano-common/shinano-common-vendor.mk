@@ -35,7 +35,6 @@ PRODUCT_COPY_FILES += \
     vendor/sony/shinano-common/proprietary/vendor/bin/taimport:$(TARGET_COPY_OUT_VENDOR)/bin/taimport \
     vendor/sony/shinano-common/proprietary/vendor/bin/time_daemon:$(TARGET_COPY_OUT_VENDOR)/bin/time_daemon \
     vendor/sony/shinano-common/proprietary/vendor/bin/updatemiscta:$(TARGET_COPY_OUT_VENDOR)/bin/updatemiscta \
-    vendor/sony/shinano-common/proprietary/vendor/bin/wvkbd:$(TARGET_COPY_OUT_VENDOR)/bin/wvkbd \
     vendor/sony/shinano-common/proprietary/vendor/etc/data/dsi_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/data/dsi_config.xml \
     vendor/sony/shinano-common/proprietary/vendor/etc/data/netmgr_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/data/netmgr_config.xml \
     vendor/sony/shinano-common/proprietary/vendor/etc/data/qmi_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/data/qmi_config.xml \
@@ -44,34 +43,17 @@ PRODUCT_COPY_FILES += \
     vendor/sony/shinano-common/proprietary/etc/firmware/cmnlib.b02:system/etc/firmware/cmnlib.b02 \
     vendor/sony/shinano-common/proprietary/etc/firmware/cmnlib.b03:system/etc/firmware/cmnlib.b03 \
     vendor/sony/shinano-common/proprietary/etc/firmware/cmnlib.mdt:system/etc/firmware/cmnlib.mdt \
-    vendor/sony/shinano-common/proprietary/etc/firmware/cpp_firmware_v1_1_1.fw:system/etc/firmware/cpp_firmware_v1_1_1.fw \
-    vendor/sony/shinano-common/proprietary/etc/firmware/cpp_firmware_v1_1_6.fw:system/etc/firmware/cpp_firmware_v1_1_6.fw \
     vendor/sony/shinano-common/proprietary/etc/firmware/cpp_firmware_v1_2_0.fw:system/etc/firmware/cpp_firmware_v1_2_0.fw \
     vendor/sony/shinano-common/proprietary/etc/firmware/tzlibasb.b00:system/etc/firmware/tzlibasb.b00 \
     vendor/sony/shinano-common/proprietary/etc/firmware/tzlibasb.b01:system/etc/firmware/tzlibasb.b01 \
     vendor/sony/shinano-common/proprietary/etc/firmware/tzlibasb.b02:system/etc/firmware/tzlibasb.b02 \
     vendor/sony/shinano-common/proprietary/etc/firmware/tzlibasb.b03:system/etc/firmware/tzlibasb.b03 \
     vendor/sony/shinano-common/proprietary/etc/firmware/tzlibasb.mdt:system/etc/firmware/tzlibasb.mdt \
-    vendor/sony/shinano-common/proprietary/etc/firmware/tznautilus.b00:system/etc/firmware/tznautilus.b00 \
-    vendor/sony/shinano-common/proprietary/etc/firmware/tznautilus.b01:system/etc/firmware/tznautilus.b01 \
-    vendor/sony/shinano-common/proprietary/etc/firmware/tznautilus.b02:system/etc/firmware/tznautilus.b02 \
-    vendor/sony/shinano-common/proprietary/etc/firmware/tznautilus.b03:system/etc/firmware/tznautilus.b03 \
-    vendor/sony/shinano-common/proprietary/etc/firmware/tznautilus.mdt:system/etc/firmware/tznautilus.mdt \
     vendor/sony/shinano-common/proprietary/etc/firmware/tzsuntory.b00:system/etc/firmware/tzsuntory.b00 \
     vendor/sony/shinano-common/proprietary/etc/firmware/tzsuntory.b01:system/etc/firmware/tzsuntory.b01 \
     vendor/sony/shinano-common/proprietary/etc/firmware/tzsuntory.b02:system/etc/firmware/tzsuntory.b02 \
     vendor/sony/shinano-common/proprietary/etc/firmware/tzsuntory.b03:system/etc/firmware/tzsuntory.b03 \
     vendor/sony/shinano-common/proprietary/etc/firmware/tzsuntory.mdt:system/etc/firmware/tzsuntory.mdt \
-    vendor/sony/shinano-common/proprietary/etc/firmware/tzwidevine.b00:system/etc/firmware/tzwidevine.b00 \
-    vendor/sony/shinano-common/proprietary/etc/firmware/tzwidevine.b01:system/etc/firmware/tzwidevine.b01 \
-    vendor/sony/shinano-common/proprietary/etc/firmware/tzwidevine.b02:system/etc/firmware/tzwidevine.b02 \
-    vendor/sony/shinano-common/proprietary/etc/firmware/tzwidevine.b03:system/etc/firmware/tzwidevine.b03 \
-    vendor/sony/shinano-common/proprietary/etc/firmware/tzwidevine.mdt:system/etc/firmware/tzwidevine.mdt \
-    vendor/sony/shinano-common/proprietary/etc/firmware/tzwvcpybuf.b00:system/etc/firmware/tzwvcpybuf.b00 \
-    vendor/sony/shinano-common/proprietary/etc/firmware/tzwvcpybuf.b01:system/etc/firmware/tzwvcpybuf.b01 \
-    vendor/sony/shinano-common/proprietary/etc/firmware/tzwvcpybuf.b02:system/etc/firmware/tzwvcpybuf.b02 \
-    vendor/sony/shinano-common/proprietary/etc/firmware/tzwvcpybuf.b03:system/etc/firmware/tzwvcpybuf.b03 \
-    vendor/sony/shinano-common/proprietary/etc/firmware/tzwvcpybuf.mdt:system/etc/firmware/tzwvcpybuf.mdt \
     vendor/sony/shinano-common/proprietary/etc/firmware/venus.b00:system/etc/firmware/venus.b00 \
     vendor/sony/shinano-common/proprietary/etc/firmware/venus.b01:system/etc/firmware/venus.b01 \
     vendor/sony/shinano-common/proprietary/etc/firmware/venus.b02:system/etc/firmware/venus.b02 \
@@ -133,9 +115,7 @@ PRODUCT_COPY_FILES += \
     vendor/sony/shinano-common/proprietary/lib/libcamera_clientsemc.so:system/lib/libcamera_clientsemc.so \
     vendor/sony/shinano-common/proprietary/lib/libcameralight.so:system/lib/libcameralight.so \
     vendor/sony/shinano-common/proprietary/lib/libcammw.so:system/lib/libcammw.so \
-    vendor/sony/shinano-common/proprietary/lib/libcrashlevelmatrix.so:system/lib/libcrashlevelmatrix.so \
     vendor/sony/shinano-common/proprietary/lib/libcredential-manager-service.so:system/lib/libcredential-manager-service.so \
-    vendor/sony/shinano-common/proprietary/lib/libdtcpipplayer.so:system/lib/libdtcpipplayer.so \
     vendor/sony/shinano-common/proprietary/lib/libexcal_core.so:system/lib/libexcal_core.so \
     vendor/sony/shinano-common/proprietary/lib/libexcal_system.so:system/lib/libexcal_system.so \
     vendor/sony/shinano-common/proprietary/lib/libidd.so:system/lib/libidd.so \
@@ -148,7 +128,6 @@ PRODUCT_COPY_FILES += \
     vendor/sony/shinano-common/proprietary/vendor/lib/libpin-cache.so:$(TARGET_COPY_OUT_VENDOR)/lib/libpin-cache.so \
     vendor/sony/shinano-common/proprietary/lib/libprotobuf-c.so:system/lib/libprotobuf-c.so \
     vendor/sony/shinano-common/proprietary/vendor/lib/libqomx_core.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqomx_core.so \
-    vendor/sony/shinano-common/proprietary/lib/libscdclient.so:system/lib/libscdclient.so \
     vendor/sony/shinano-common/proprietary/lib/libsomc_chokoballpal.so:system/lib/libsomc_chokoballpal.so \
     vendor/sony/shinano-common/proprietary/lib/libsony_chokoball.so:system/lib/libsony_chokoball.so \
     vendor/sony/shinano-common/proprietary/lib/libsony_chokoballrsc.so:system/lib/libsony_chokoballrsc.so \

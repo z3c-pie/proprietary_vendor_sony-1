@@ -1,4 +1,4 @@
-# Copyright (C) 2013-2016 The CyanogenMod Project
+# Copyright (C) 2014-2016 The CyanogenMod Project
 # Copyright (C) 2017-2019 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,6 +17,6 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifneq ($(filter honami togari amami z3 z3dual z3c sirius castor castor_windy,$(TARGET_DEVICE)),)
+ifneq ($(filter amami castor castor_windy honami sirius togari z3 z3c z3dual,$(TARGET_DEVICE)),)
 
 endif

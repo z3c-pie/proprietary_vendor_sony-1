@@ -1,4 +1,4 @@
-# Copyright (C) 2013-2016 The CyanogenMod Project
+# Copyright (C) 2014-2016 The CyanogenMod Project
 # Copyright (C) 2017-2019 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifneq ($(filter z3 z3dual z3c sirius castor castor_windy,$(TARGET_DEVICE)),)
+ifneq ($(filter castor castor_windy sirius z3 z3c z3dual,$(TARGET_DEVICE)),)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE := libta
@@ -31,25 +31,14 @@ LOCAL_VENDOR_MODULE := true
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := libTimeService
+LOCAL_MODULE := libtime_genoff
 LOCAL_MODULE_OWNER := sony
-LOCAL_SRC_FILES := proprietary/vendor/lib/libTimeService.so
+LOCAL_SRC_FILES := proprietary/vendor/lib/libtime_genoff.so
 LOCAL_MULTILIB := 32
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := SHARED_LIBRARIES
 LOCAL_MODULE_SUFFIX := .so
 LOCAL_VENDOR_MODULE := true
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := TimeService
-LOCAL_MODULE_OWNER := sony
-LOCAL_SRC_FILES := proprietary/app/TimeService/TimeService.apk
-LOCAL_CERTIFICATE := platform
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := APPS
-LOCAL_DEX_PREOPT := false
-LOCAL_MODULE_SUFFIX := .apk
 include $(BUILD_PREBUILT)
 
 endif

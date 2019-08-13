@@ -1,4 +1,4 @@
-# Copyright (C) 2013-2016 The CyanogenMod Project
+# Copyright (C) 2014-2016 The CyanogenMod Project
 # Copyright (C) 2017-2019 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,18 +22,15 @@ PRODUCT_COPY_FILES += \
     vendor/sony/shinano-common/proprietary/vendor/bin/iddd:$(TARGET_COPY_OUT_VENDOR)/bin/iddd \
     vendor/sony/shinano-common/proprietary/vendor/bin/mlog_qmi_service:$(TARGET_COPY_OUT_VENDOR)/bin/mlog_qmi_service \
     vendor/sony/shinano-common/proprietary/vendor/bin/mm-qcamera-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/mm-qcamera-daemon \
-    vendor/sony/shinano-common/proprietary/vendor/bin/netmgrd:$(TARGET_COPY_OUT_VENDOR)/bin/netmgrd \
-    vendor/sony/shinano-common/proprietary/vendor/bin/qmuxd:$(TARGET_COPY_OUT_VENDOR)/bin/qmuxd \
     vendor/sony/shinano-common/proprietary/vendor/bin/qseecomd:$(TARGET_COPY_OUT_VENDOR)/bin/qseecomd \
-    vendor/sony/shinano-common/proprietary/vendor/bin/rmt_storage:$(TARGET_COPY_OUT_VENDOR)/bin/rmt_storage \
     vendor/sony/shinano-common/proprietary/vendor/bin/scd:$(TARGET_COPY_OUT_VENDOR)/bin/scd \
     vendor/sony/shinano-common/proprietary/vendor/bin/sct_service:$(TARGET_COPY_OUT_VENDOR)/bin/sct_service \
     vendor/sony/shinano-common/proprietary/vendor/bin/sensors.qcom:$(TARGET_COPY_OUT_VENDOR)/bin/sensors.qcom \
     vendor/sony/shinano-common/proprietary/vendor/bin/suntrold:$(TARGET_COPY_OUT_VENDOR)/bin/suntrold \
     vendor/sony/shinano-common/proprietary/vendor/bin/ta_qmi_service:$(TARGET_COPY_OUT_VENDOR)/bin/ta_qmi_service \
     vendor/sony/shinano-common/proprietary/vendor/bin/taimport:$(TARGET_COPY_OUT_VENDOR)/bin/taimport \
-    vendor/sony/shinano-common/proprietary/vendor/bin/time_daemon:$(TARGET_COPY_OUT_VENDOR)/bin/time_daemon \
     vendor/sony/shinano-common/proprietary/vendor/bin/updatemiscta:$(TARGET_COPY_OUT_VENDOR)/bin/updatemiscta \
+    vendor/sony/shinano-common/proprietary/vendor/etc/ad_calib.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/ad_calib.cfg \
     vendor/sony/shinano-common/proprietary/vendor/etc/data/dsi_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/data/dsi_config.xml \
     vendor/sony/shinano-common/proprietary/vendor/etc/data/netmgr_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/data/netmgr_config.xml \
     vendor/sony/shinano-common/proprietary/vendor/etc/data/qmi_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/data/qmi_config.xml \
@@ -43,6 +40,11 @@ PRODUCT_COPY_FILES += \
     vendor/sony/shinano-common/proprietary/etc/firmware/cmnlib.b03:system/etc/firmware/cmnlib.b03 \
     vendor/sony/shinano-common/proprietary/etc/firmware/cmnlib.mdt:system/etc/firmware/cmnlib.mdt \
     vendor/sony/shinano-common/proprietary/etc/firmware/cpp_firmware_v1_2_0.fw:system/etc/firmware/cpp_firmware_v1_2_0.fw \
+    vendor/sony/shinano-common/proprietary/etc/firmware/tzhdcp.b00:system/etc/firmware/tzhdcp.b00 \
+    vendor/sony/shinano-common/proprietary/etc/firmware/tzhdcp.b01:system/etc/firmware/tzhdcp.b01 \
+    vendor/sony/shinano-common/proprietary/etc/firmware/tzhdcp.b02:system/etc/firmware/tzhdcp.b02 \
+    vendor/sony/shinano-common/proprietary/etc/firmware/tzhdcp.b03:system/etc/firmware/tzhdcp.b03 \
+    vendor/sony/shinano-common/proprietary/etc/firmware/tzhdcp.mdt:system/etc/firmware/tzhdcp.mdt \
     vendor/sony/shinano-common/proprietary/etc/firmware/tzlibasb.b00:system/etc/firmware/tzlibasb.b00 \
     vendor/sony/shinano-common/proprietary/etc/firmware/tzlibasb.b01:system/etc/firmware/tzlibasb.b01 \
     vendor/sony/shinano-common/proprietary/etc/firmware/tzlibasb.b02:system/etc/firmware/tzlibasb.b02 \
@@ -53,16 +55,17 @@ PRODUCT_COPY_FILES += \
     vendor/sony/shinano-common/proprietary/etc/firmware/tzsuntory.b02:system/etc/firmware/tzsuntory.b02 \
     vendor/sony/shinano-common/proprietary/etc/firmware/tzsuntory.b03:system/etc/firmware/tzsuntory.b03 \
     vendor/sony/shinano-common/proprietary/etc/firmware/tzsuntory.mdt:system/etc/firmware/tzsuntory.mdt \
-    vendor/sony/shinano-common/proprietary/etc/firmware/venus.b00:system/etc/firmware/venus.b00 \
-    vendor/sony/shinano-common/proprietary/etc/firmware/venus.b01:system/etc/firmware/venus.b01 \
-    vendor/sony/shinano-common/proprietary/etc/firmware/venus.b02:system/etc/firmware/venus.b02 \
-    vendor/sony/shinano-common/proprietary/etc/firmware/venus.b03:system/etc/firmware/venus.b03 \
-    vendor/sony/shinano-common/proprietary/etc/firmware/venus.b04:system/etc/firmware/venus.b04 \
-    vendor/sony/shinano-common/proprietary/etc/firmware/venus.mbn:system/etc/firmware/venus.mbn \
-    vendor/sony/shinano-common/proprietary/etc/firmware/venus.mdt:system/etc/firmware/venus.mdt \
+    vendor/sony/shinano-common/proprietary/vendor/firmware/venus.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/venus.b00 \
+    vendor/sony/shinano-common/proprietary/vendor/firmware/venus.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/venus.b01 \
+    vendor/sony/shinano-common/proprietary/vendor/firmware/venus.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/venus.b02 \
+    vendor/sony/shinano-common/proprietary/vendor/firmware/venus.b03:$(TARGET_COPY_OUT_VENDOR)/firmware/venus.b03 \
+    vendor/sony/shinano-common/proprietary/vendor/firmware/venus.b04:$(TARGET_COPY_OUT_VENDOR)/firmware/venus.b04 \
+    vendor/sony/shinano-common/proprietary/vendor/firmware/venus.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/venus.mbn \
+    vendor/sony/shinano-common/proprietary/vendor/firmware/venus.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/venus.mdt \
     vendor/sony/shinano-common/proprietary/vendor/firmware/fw_bcmdhd.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/fw_bcmdhd.bin \
     vendor/sony/shinano-common/proprietary/vendor/firmware/fw_bcmdhd_apsta.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/fw_bcmdhd_apsta.bin \
     vendor/sony/shinano-common/proprietary/etc/flashled_calc_parameters.cfg:system/etc/flashled_calc_parameters.cfg \
+    vendor/sony/shinano-common/proprietary/vendor/etc/iddd.conf:$(TARGET_COPY_OUT_VENDOR)/etc/iddd.conf \
     vendor/sony/shinano-common/proprietary/lib/camera/libexcal_cam_ctrl_plugin.so:system/lib/camera/libexcal_cam_ctrl_plugin.so \
     vendor/sony/shinano-common/proprietary/lib/camera/libexcal_cap_ctrl_plugin.so:system/lib/camera/libexcal_cap_ctrl_plugin.so \
     vendor/sony/shinano-common/proprietary/lib/camera/libexcal_color_ctrl_plugin.so:system/lib/camera/libexcal_color_ctrl_plugin.so \
@@ -86,16 +89,8 @@ PRODUCT_COPY_FILES += \
     vendor/sony/shinano-common/proprietary/lib/camera/libexcal_splitter_plugin.so:system/lib/camera/libexcal_splitter_plugin.so \
     vendor/sony/shinano-common/proprietary/lib/camera/libexcal_streaming_ctrl_plugin.so:system/lib/camera/libexcal_streaming_ctrl_plugin.so \
     vendor/sony/shinano-common/proprietary/lib/hw/camera.vendor.qcom.so:system/lib/hw/camera.vendor.qcom.so \
-    vendor/sony/shinano-common/proprietary/lib/libMiscTAApi.so:system/lib/libMiscTAApi.so \
-    vendor/sony/shinano-common/proprietary/lib/libMiscTaAccessor.so:system/lib/libMiscTaAccessor.so \
     vendor/sony/shinano-common/proprietary/lib/lib_asb_tee.so:system/lib/lib_asb_tee.so \
-    vendor/sony/shinano-common/proprietary/lib/lib_extended_boot_lock.so:system/lib/lib_extended_boot_lock.so \
-    vendor/sony/shinano-common/proprietary/lib/lib_get_hwc_revision.so:system/lib/lib_get_hwc_revision.so \
-    vendor/sony/shinano-common/proprietary/lib/lib_get_rooting_status.so:system/lib/lib_get_rooting_status.so \
-    vendor/sony/shinano-common/proprietary/lib/lib_get_s1_cert_common_name.so:system/lib/lib_get_s1_cert_common_name.so \
     vendor/sony/shinano-common/proprietary/lib/lib_get_secure_mode.so:system/lib/lib_get_secure_mode.so \
-    vendor/sony/shinano-common/proprietary/lib/lib_s1_verification.so:system/lib/lib_s1_verification.so \
-    vendor/sony/shinano-common/proprietary/lib/lib_uncontrolled_rooting_status.so:system/lib/lib_uncontrolled_rooting_status.so \
     vendor/sony/shinano-common/proprietary/lib/libcacao_chokoball.so:system/lib/libcacao_chokoball.so \
     vendor/sony/shinano-common/proprietary/lib/libcacao_client.so:system/lib/libcacao_client.so \
     vendor/sony/shinano-common/proprietary/lib/libcacao_common.so:system/lib/libcacao_common.so \
@@ -119,8 +114,7 @@ PRODUCT_COPY_FILES += \
     vendor/sony/shinano-common/proprietary/lib/libexcal_system.so:system/lib/libexcal_system.so \
     vendor/sony/shinano-common/proprietary/lib/libidd.so:system/lib/libidd.so \
     vendor/sony/shinano-common/proprietary/lib/libkeyctrl.so:system/lib/libkeyctrl.so \
-    vendor/sony/shinano-common/proprietary/vendor/lib/libmdmdetect.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmdmdetect.so \
-    vendor/sony/shinano-common/proprietary/lib/libmiscta.so:system/lib/libmiscta.so \
+    vendor/sony/shinano-common/proprietary/vendor/lib/libmiscta.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmiscta.so \
     vendor/sony/shinano-common/proprietary/vendor/lib/libmmcamera_interface.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_interface.so \
     vendor/sony/shinano-common/proprietary/vendor/lib/libmmjpeg_interface.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmjpeg_interface.so \
     vendor/sony/shinano-common/proprietary/lib/libprotobuf-c.so:system/lib/libprotobuf-c.so \
@@ -128,9 +122,12 @@ PRODUCT_COPY_FILES += \
     vendor/sony/shinano-common/proprietary/lib/libsomc_chokoballpal.so:system/lib/libsomc_chokoballpal.so \
     vendor/sony/shinano-common/proprietary/lib/libsony_chokoball.so:system/lib/libsony_chokoball.so \
     vendor/sony/shinano-common/proprietary/lib/libsony_chokoballrsc.so:system/lib/libsony_chokoballrsc.so \
-    vendor/sony/shinano-common/proprietary/vendor/lib/libsony_face.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsony_face.so \
+    vendor/sony/shinano-common/proprietary/lib/libsony_face.so:system/lib/libsony_face.so \
     vendor/sony/shinano-common/proprietary/vendor/CredentialManagerData:$(TARGET_COPY_OUT_VENDOR)/CredentialManagerData \
     vendor/sony/shinano-common/proprietary/vendor/bin/irsc_util:$(TARGET_COPY_OUT_VENDOR)/bin/irsc_util \
+    vendor/sony/shinano-common/proprietary/vendor/bin/netmgrd:$(TARGET_COPY_OUT_VENDOR)/bin/netmgrd \
+    vendor/sony/shinano-common/proprietary/vendor/bin/qmuxd:$(TARGET_COPY_OUT_VENDOR)/bin/qmuxd \
+    vendor/sony/shinano-common/proprietary/vendor/bin/rmt_storage:$(TARGET_COPY_OUT_VENDOR)/bin/rmt_storage \
     vendor/sony/shinano-common/proprietary/vendor/camera/flash.dat:$(TARGET_COPY_OUT_VENDOR)/camera/flash.dat \
     vendor/sony/shinano-common/proprietary/vendor/camera/jpeg_fsc.dat:$(TARGET_COPY_OUT_VENDOR)/camera/jpeg_fsc.dat \
     vendor/sony/shinano-common/proprietary/vendor/firmware/keymaster/keymaster.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/keymaster/keymaster.b00 \
@@ -143,119 +140,19 @@ PRODUCT_COPY_FILES += \
     vendor/sony/shinano-common/proprietary/vendor/lib/hw/android.hardware.nfc@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.nfc@1.0-impl.so \
     vendor/sony/shinano-common/proprietary/vendor/lib/hw/nfc_nci.pn54x.default.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/nfc_nci.pn54x.default.so \
     vendor/sony/shinano-common/proprietary/vendor/lib/hw/sensors.msm8974.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/sensors.msm8974.so \
+    vendor/sony/shinano-common/proprietary/vendor/lib/libOmxAacDec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOmxAacDec.so \
+    vendor/sony/shinano-common/proprietary/vendor/lib/libOmxAmrwbplusDec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOmxAmrwbplusDec.so \
+    vendor/sony/shinano-common/proprietary/vendor/lib/libOmxEvrcDec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOmxEvrcDec.so \
+    vendor/sony/shinano-common/proprietary/vendor/lib/libOmxQcelp13Dec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOmxQcelp13Dec.so \
+    vendor/sony/shinano-common/proprietary/vendor/lib/libOmxWmaDec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOmxWmaDec.so \
     vendor/sony/shinano-common/proprietary/vendor/lib/libQSEEComAPI.so:$(TARGET_COPY_OUT_VENDOR)/lib/libQSEEComAPI.so \
     vendor/sony/shinano-common/proprietary/vendor/lib/libacdbloader.so:$(TARGET_COPY_OUT_VENDOR)/lib/libacdbloader.so \
     vendor/sony/shinano-common/proprietary/vendor/lib/libacdbrtac.so:$(TARGET_COPY_OUT_VENDOR)/lib/libacdbrtac.so \
-    vendor/sony/shinano-common/proprietary/vendor/lib/libactuator_dw9714_camera.so:$(TARGET_COPY_OUT_VENDOR)/lib/libactuator_dw9714_camera.so \
-    vendor/sony/shinano-common/proprietary/vendor/lib/libactuator_dw9716_camera.so:$(TARGET_COPY_OUT_VENDOR)/lib/libactuator_dw9716_camera.so \
-    vendor/sony/shinano-common/proprietary/vendor/lib/libactuator_iu074_camera.so:$(TARGET_COPY_OUT_VENDOR)/lib/libactuator_iu074_camera.so \
-    vendor/sony/shinano-common/proprietary/vendor/lib/libactuator_ov12830_camera.so:$(TARGET_COPY_OUT_VENDOR)/lib/libactuator_ov12830_camera.so \
-    vendor/sony/shinano-common/proprietary/vendor/lib/libactuator_ov8825_camera.so:$(TARGET_COPY_OUT_VENDOR)/lib/libactuator_ov8825_camera.so \
-    vendor/sony/shinano-common/proprietary/vendor/lib/libactuator_rohm_bu64243gwz_camera.so:$(TARGET_COPY_OUT_VENDOR)/lib/libactuator_rohm_bu64243gwz_camera.so \
     vendor/sony/shinano-common/proprietary/vendor/lib/libadiertac.so:$(TARGET_COPY_OUT_VENDOR)/lib/libadiertac.so \
     vendor/sony/shinano-common/proprietary/vendor/lib/libadsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libadsprpc.so \
-    vendor/sony/shinano-common/proprietary/vendor/lib/libaptX_encoder.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaptX_encoder.so \
     vendor/sony/shinano-common/proprietary/vendor/lib/libaptXHD_encoder.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaptXHD_encoder.so \
+    vendor/sony/shinano-common/proprietary/vendor/lib/libaptX_encoder.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaptX_encoder.so \
     vendor/sony/shinano-common/proprietary/vendor/lib/libaudcal.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudcal.so \
-    vendor/sony/shinano-common/proprietary/vendor/lib/libchromatix_SKUAA_ST_gc0339_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_SKUAA_ST_gc0339_common.so \
-    vendor/sony/shinano-common/proprietary/vendor/lib/libchromatix_SKUAA_ST_gc0339_default_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_SKUAA_ST_gc0339_default_video.so \
-    vendor/sony/shinano-common/proprietary/vendor/lib/libchromatix_SKUAA_ST_gc0339_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_SKUAA_ST_gc0339_preview.so \
-    vendor/sony/shinano-common/proprietary/vendor/lib/libchromatix_SKUAB_ST_s5k4e1_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_SKUAB_ST_s5k4e1_common.so \
-    vendor/sony/shinano-common/proprietary/vendor/lib/libchromatix_SKUAB_ST_s5k4e1_default_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_SKUAB_ST_s5k4e1_default_video.so \
-    vendor/sony/shinano-common/proprietary/vendor/lib/libchromatix_SKUAB_ST_s5k4e1_hfr_120fps.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_SKUAB_ST_s5k4e1_hfr_120fps.so \
-    vendor/sony/shinano-common/proprietary/vendor/lib/libchromatix_SKUAB_ST_s5k4e1_hfr_60fps.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_SKUAB_ST_s5k4e1_hfr_60fps.so \
-    vendor/sony/shinano-common/proprietary/vendor/lib/libchromatix_SKUAB_ST_s5k4e1_hfr_90fps.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_SKUAB_ST_s5k4e1_hfr_90fps.so \
-    vendor/sony/shinano-common/proprietary/vendor/lib/libchromatix_SKUAB_ST_s5k4e1_liveshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_SKUAB_ST_s5k4e1_liveshot.so \
-    vendor/sony/shinano-common/proprietary/vendor/lib/libchromatix_SKUAB_ST_s5k4e1_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_SKUAB_ST_s5k4e1_preview.so \
-    vendor/sony/shinano-common/proprietary/vendor/lib/libchromatix_SKUAB_ST_s5k4e1_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_SKUAB_ST_s5k4e1_snapshot.so \
-    vendor/sony/shinano-common/proprietary/vendor/lib/libchromatix_SKUAB_ST_s5k4e1_video_hd.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_SKUAB_ST_s5k4e1_video_hd.so \
-    vendor/sony/shinano-common/proprietary/vendor/lib/libchromatix_SKUAB_ST_s5k4e1_zsl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_SKUAB_ST_s5k4e1_zsl.so \
-    vendor/sony/shinano-common/proprietary/vendor/lib/libchromatix_imx132_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx132_common.so \
-    vendor/sony/shinano-common/proprietary/vendor/lib/libchromatix_imx132_default_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx132_default_video.so \
-    vendor/sony/shinano-common/proprietary/vendor/lib/libchromatix_imx132_liveshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx132_liveshot.so \
-    vendor/sony/shinano-common/proprietary/vendor/lib/libchromatix_imx132_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx132_preview.so \
-    vendor/sony/shinano-common/proprietary/vendor/lib/libchromatix_imx132_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx132_snapshot.so \
-    vendor/sony/shinano-common/proprietary/vendor/lib/libchromatix_imx134_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx134_common.so \
-    vendor/sony/shinano-common/proprietary/vendor/lib/libchromatix_imx134_default_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx134_default_video.so \
-    vendor/sony/shinano-common/proprietary/vendor/lib/libchromatix_imx134_hfr_120.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx134_hfr_120.so \
-    vendor/sony/shinano-common/proprietary/vendor/lib/libchromatix_imx134_hfr_60.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx134_hfr_60.so \
-    vendor/sony/shinano-common/proprietary/vendor/lib/libchromatix_imx134_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx134_preview.so \
-    vendor/sony/shinano-common/proprietary/vendor/lib/libchromatix_imx134_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx134_snapshot.so \
-    vendor/sony/shinano-common/proprietary/vendor/lib/libchromatix_imx135_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx135_common.so \
-    vendor/sony/shinano-common/proprietary/vendor/lib/libchromatix_imx135_default_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx135_default_video.so \
-    vendor/sony/shinano-common/proprietary/vendor/lib/libchromatix_imx135_hfr_120.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx135_hfr_120.so \
-    vendor/sony/shinano-common/proprietary/vendor/lib/libchromatix_imx135_hfr_60.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx135_hfr_60.so \
-    vendor/sony/shinano-common/proprietary/vendor/lib/libchromatix_imx135_hfr_90.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx135_hfr_90.so \
-    vendor/sony/shinano-common/proprietary/vendor/lib/libchromatix_imx135_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx135_preview.so \
-    vendor/sony/shinano-common/proprietary/vendor/lib/libchromatix_imx135_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx135_snapshot.so \
-    vendor/sony/shinano-common/proprietary/vendor/lib/libchromatix_imx135_video_hd.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx135_video_hd.so \
-    vendor/sony/shinano-common/proprietary/vendor/lib/libchromatix_ov2720_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov2720_common.so \
-    vendor/sony/shinano-common/proprietary/vendor/lib/libchromatix_ov2720_default_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov2720_default_video.so \
-    vendor/sony/shinano-common/proprietary/vendor/lib/libchromatix_ov2720_hfr.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov2720_hfr.so \
-    vendor/sony/shinano-common/proprietary/vendor/lib/libchromatix_ov2720_liveshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov2720_liveshot.so \
-    vendor/sony/shinano-common/proprietary/vendor/lib/libchromatix_ov2720_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov2720_preview.so \
-    vendor/sony/shinano-common/proprietary/vendor/lib/libchromatix_ov2720_zsl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov2720_zsl.so \
-    vendor/sony/shinano-common/proprietary/vendor/lib/libchromatix_ov5648_oty5f03_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov5648_oty5f03_common.so \
-    vendor/sony/shinano-common/proprietary/vendor/lib/libchromatix_ov5648_oty5f03_default_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov5648_oty5f03_default_video.so \
-    vendor/sony/shinano-common/proprietary/vendor/lib/libchromatix_ov5648_oty5f03_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov5648_oty5f03_preview.so \
-    vendor/sony/shinano-common/proprietary/vendor/lib/libchromatix_ov5648_oty5f03_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov5648_oty5f03_snapshot.so \
-    vendor/sony/shinano-common/proprietary/vendor/lib/libchromatix_ov5648_oty5f03_zsl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov5648_oty5f03_zsl.so \
-    vendor/sony/shinano-common/proprietary/vendor/lib/libchromatix_ov8825_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov8825_common.so \
-    vendor/sony/shinano-common/proprietary/vendor/lib/libchromatix_ov8825_default_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov8825_default_video.so \
-    vendor/sony/shinano-common/proprietary/vendor/lib/libchromatix_ov8825_hfr_120fps.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov8825_hfr_120fps.so \
-    vendor/sony/shinano-common/proprietary/vendor/lib/libchromatix_ov8825_hfr_60fps.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov8825_hfr_60fps.so \
-    vendor/sony/shinano-common/proprietary/vendor/lib/libchromatix_ov8825_hfr_90fps.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov8825_hfr_90fps.so \
-    vendor/sony/shinano-common/proprietary/vendor/lib/libchromatix_ov8825_liveshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov8825_liveshot.so \
-    vendor/sony/shinano-common/proprietary/vendor/lib/libchromatix_ov8825_liveshot_hd.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov8825_liveshot_hd.so \
-    vendor/sony/shinano-common/proprietary/vendor/lib/libchromatix_ov8825_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov8825_preview.so \
-    vendor/sony/shinano-common/proprietary/vendor/lib/libchromatix_ov8825_preview_hd.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov8825_preview_hd.so \
-    vendor/sony/shinano-common/proprietary/vendor/lib/libchromatix_ov8825_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov8825_snapshot.so \
-    vendor/sony/shinano-common/proprietary/vendor/lib/libchromatix_ov8825_snapshot_hd.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov8825_snapshot_hd.so \
-    vendor/sony/shinano-common/proprietary/vendor/lib/libchromatix_ov8825_video_hd.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov8825_video_hd.so \
-    vendor/sony/shinano-common/proprietary/vendor/lib/libchromatix_ov8825_zsl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov8825_zsl.so \
-    vendor/sony/shinano-common/proprietary/vendor/lib/libchromatix_ov8865_q8v18a_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov8865_q8v18a_common.so \
-    vendor/sony/shinano-common/proprietary/vendor/lib/libchromatix_ov8865_q8v18a_default_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov8865_q8v18a_default_video.so \
-    vendor/sony/shinano-common/proprietary/vendor/lib/libchromatix_ov8865_q8v18a_hfr_120fps.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov8865_q8v18a_hfr_120fps.so \
-    vendor/sony/shinano-common/proprietary/vendor/lib/libchromatix_ov8865_q8v18a_hfr_60fps.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov8865_q8v18a_hfr_60fps.so \
-    vendor/sony/shinano-common/proprietary/vendor/lib/libchromatix_ov8865_q8v18a_hfr_90fps.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov8865_q8v18a_hfr_90fps.so \
-    vendor/sony/shinano-common/proprietary/vendor/lib/libchromatix_ov8865_q8v18a_liveshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov8865_q8v18a_liveshot.so \
-    vendor/sony/shinano-common/proprietary/vendor/lib/libchromatix_ov8865_q8v18a_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov8865_q8v18a_preview.so \
-    vendor/sony/shinano-common/proprietary/vendor/lib/libchromatix_ov8865_q8v18a_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov8865_q8v18a_snapshot.so \
-    vendor/sony/shinano-common/proprietary/vendor/lib/libchromatix_ov8865_q8v18a_video_hd.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov8865_q8v18a_video_hd.so \
-    vendor/sony/shinano-common/proprietary/vendor/lib/libchromatix_ov8865_q8v18a_zsl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov8865_q8v18a_zsl.so \
-    vendor/sony/shinano-common/proprietary/vendor/lib/libchromatix_ov9724_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov9724_common.so \
-    vendor/sony/shinano-common/proprietary/vendor/lib/libchromatix_ov9724_default_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov9724_default_video.so \
-    vendor/sony/shinano-common/proprietary/vendor/lib/libchromatix_ov9724_liveshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov9724_liveshot.so \
-    vendor/sony/shinano-common/proprietary/vendor/lib/libchromatix_ov9724_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov9724_preview.so \
-    vendor/sony/shinano-common/proprietary/vendor/lib/libchromatix_s5k3l1yx_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l1yx_common.so \
-    vendor/sony/shinano-common/proprietary/vendor/lib/libchromatix_s5k3l1yx_default_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l1yx_default_video.so \
-    vendor/sony/shinano-common/proprietary/vendor/lib/libchromatix_s5k3l1yx_hfr_120fps.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l1yx_hfr_120fps.so \
-    vendor/sony/shinano-common/proprietary/vendor/lib/libchromatix_s5k3l1yx_hfr_60fps.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l1yx_hfr_60fps.so \
-    vendor/sony/shinano-common/proprietary/vendor/lib/libchromatix_s5k3l1yx_hfr_90fps.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l1yx_hfr_90fps.so \
-    vendor/sony/shinano-common/proprietary/vendor/lib/libchromatix_s5k3l1yx_liveshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l1yx_liveshot.so \
-    vendor/sony/shinano-common/proprietary/vendor/lib/libchromatix_s5k3l1yx_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l1yx_preview.so \
-    vendor/sony/shinano-common/proprietary/vendor/lib/libchromatix_s5k3l1yx_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l1yx_snapshot.so \
-    vendor/sony/shinano-common/proprietary/vendor/lib/libchromatix_s5k3l1yx_video_hd.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l1yx_video_hd.so \
-    vendor/sony/shinano-common/proprietary/vendor/lib/libchromatix_s5k3l1yx_zsl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l1yx_zsl.so \
-    vendor/sony/shinano-common/proprietary/vendor/lib/libchromatix_skuab_shinetech_gc0339_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_skuab_shinetech_gc0339_common.so \
-    vendor/sony/shinano-common/proprietary/vendor/lib/libchromatix_skuab_shinetech_gc0339_default_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_skuab_shinetech_gc0339_default_video.so \
-    vendor/sony/shinano-common/proprietary/vendor/lib/libchromatix_skuab_shinetech_gc0339_liveshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_skuab_shinetech_gc0339_liveshot.so \
-    vendor/sony/shinano-common/proprietary/vendor/lib/libchromatix_skuab_shinetech_gc0339_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_skuab_shinetech_gc0339_preview.so \
-    vendor/sony/shinano-common/proprietary/vendor/lib/libchromatix_skuab_shinetech_gc0339_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_skuab_shinetech_gc0339_snapshot.so \
-    vendor/sony/shinano-common/proprietary/vendor/lib/libchromatix_skuab_shinetech_gc0339_zsl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_skuab_shinetech_gc0339_zsl.so \
-    vendor/sony/shinano-common/proprietary/vendor/lib/libchromatix_skuf_ov12830_p12v01c_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_skuf_ov12830_p12v01c_common.so \
-    vendor/sony/shinano-common/proprietary/vendor/lib/libchromatix_skuf_ov12830_p12v01c_default_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_skuf_ov12830_p12v01c_default_video.so \
-    vendor/sony/shinano-common/proprietary/vendor/lib/libchromatix_skuf_ov12830_p12v01c_hfr_120fps.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_skuf_ov12830_p12v01c_hfr_120fps.so \
-    vendor/sony/shinano-common/proprietary/vendor/lib/libchromatix_skuf_ov12830_p12v01c_hfr_60fps.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_skuf_ov12830_p12v01c_hfr_60fps.so \
-    vendor/sony/shinano-common/proprietary/vendor/lib/libchromatix_skuf_ov12830_p12v01c_hfr_90fps.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_skuf_ov12830_p12v01c_hfr_90fps.so \
-    vendor/sony/shinano-common/proprietary/vendor/lib/libchromatix_skuf_ov12830_p12v01c_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_skuf_ov12830_p12v01c_preview.so \
-    vendor/sony/shinano-common/proprietary/vendor/lib/libchromatix_skuf_ov12830_p12v01c_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_skuf_ov12830_p12v01c_snapshot.so \
-    vendor/sony/shinano-common/proprietary/vendor/lib/libchromatix_skuf_ov12830_p12v01c_video_hd.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_skuf_ov12830_p12v01c_video_hd.so \
-    vendor/sony/shinano-common/proprietary/vendor/lib/libchromatix_skuf_ov12830_p12v01c_zsl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_skuf_ov12830_p12v01c_zsl.so \
-    vendor/sony/shinano-common/proprietary/vendor/lib/libchromatix_skuf_ov5648_p5v23c_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_skuf_ov5648_p5v23c_common.so \
-    vendor/sony/shinano-common/proprietary/vendor/lib/libchromatix_skuf_ov5648_p5v23c_default_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_skuf_ov5648_p5v23c_default_video.so \
-    vendor/sony/shinano-common/proprietary/vendor/lib/libchromatix_skuf_ov5648_p5v23c_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_skuf_ov5648_p5v23c_preview.so \
-    vendor/sony/shinano-common/proprietary/vendor/lib/libchromatix_skuf_ov5648_p5v23c_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_skuf_ov5648_p5v23c_snapshot.so \
     vendor/sony/shinano-common/proprietary/vendor/lib/libconfigdb.so:$(TARGET_COPY_OUT_VENDOR)/lib/libconfigdb.so \
     vendor/sony/shinano-common/proprietary/vendor/lib/libdiag.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdiag.so \
     vendor/sony/shinano-common/proprietary/vendor/lib/libdrmfs.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdrmfs.so \
@@ -264,9 +161,9 @@ PRODUCT_COPY_FILES += \
     vendor/sony/shinano-common/proprietary/vendor/lib/libdsutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdsutils.so \
     vendor/sony/shinano-common/proprietary/vendor/lib/libfastcvadsp_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib/libfastcvadsp_stub.so \
     vendor/sony/shinano-common/proprietary/vendor/lib/libfastcvopt.so:$(TARGET_COPY_OUT_VENDOR)/lib/libfastcvopt.so \
-    vendor/sony/shinano-common/proprietary/vendor/lib/libgeofence.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgeofence.so \
     vendor/sony/shinano-common/proprietary/vendor/lib/libidl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libidl.so \
     vendor/sony/shinano-common/proprietary/vendor/lib/liblqe.so:$(TARGET_COPY_OUT_VENDOR)/lib/liblqe.so \
+    vendor/sony/shinano-common/proprietary/vendor/lib/libmdmdetect.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmdmdetect.so \
     vendor/sony/shinano-common/proprietary/vendor/lib/libmmcamera2_c2d_module.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera2_c2d_module.so \
     vendor/sony/shinano-common/proprietary/vendor/lib/libmmcamera2_cpp_module.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera2_cpp_module.so \
     vendor/sony/shinano-common/proprietary/vendor/lib/libmmcamera2_frame_algorithm.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera2_frame_algorithm.so \
@@ -284,10 +181,6 @@ PRODUCT_COPY_FILES += \
     vendor/sony/shinano-common/proprietary/vendor/lib/libmmcamera_hdr_gb_lib.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_hdr_gb_lib.so \
     vendor/sony/shinano-common/proprietary/vendor/lib/libmmcamera_hdr_lib.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_hdr_lib.so \
     vendor/sony/shinano-common/proprietary/vendor/lib/libmmcamera_imglib.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_imglib.so \
-    vendor/sony/shinano-common/proprietary/vendor/lib/libmmcamera_ofilm_oty5f03_eeprom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_ofilm_oty5f03_eeprom.so \
-    vendor/sony/shinano-common/proprietary/vendor/lib/libmmcamera_sunny_p12v01m_eeprom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_sunny_p12v01m_eeprom.so \
-    vendor/sony/shinano-common/proprietary/vendor/lib/libmmcamera_sunny_p5v23c_eeprom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_sunny_p5v23c_eeprom.so \
-    vendor/sony/shinano-common/proprietary/vendor/lib/libmmcamera_sunny_q8v18a_eeprom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_sunny_q8v18a_eeprom.so \
     vendor/sony/shinano-common/proprietary/vendor/lib/libmmcamera_tintless_algo.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_tintless_algo.so \
     vendor/sony/shinano-common/proprietary/vendor/lib/libmmcamera_tintless_bg_pca_algo.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_tintless_bg_pca_algo.so \
     vendor/sony/shinano-common/proprietary/vendor/lib/libmmcamera_truly_cm7700_eeprom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_truly_cm7700_eeprom.so \
@@ -307,16 +200,12 @@ PRODUCT_COPY_FILES += \
     vendor/sony/shinano-common/proprietary/vendor/lib/libqmi_csi.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqmi_csi.so \
     vendor/sony/shinano-common/proprietary/vendor/lib/libqmi_encdec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqmi_encdec.so \
     vendor/sony/shinano-common/proprietary/vendor/lib/libqmiservices.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqmiservices.so \
-    vendor/sony/shinano-common/proprietary/vendor/lib/libquipc_os_api.so:$(TARGET_COPY_OUT_VENDOR)/lib/libquipc_os_api.so \
     vendor/sony/shinano-common/proprietary/vendor/lib/libril-qc-qmi-1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libril-qc-qmi-1.so \
     vendor/sony/shinano-common/proprietary/vendor/lib/libril-qcril-hook-oem.so:$(TARGET_COPY_OUT_VENDOR)/lib/libril-qcril-hook-oem.so \
-    vendor/sony/shinano-common/proprietary/vendor/lib/librpmb.so:$(TARGET_COPY_OUT_VENDOR)/lib/librpmb.so \
     vendor/sony/shinano-common/proprietary/vendor/lib/libsensor1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsensor1.so \
     vendor/sony/shinano-common/proprietary/vendor/lib/libsensor_reg.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsensor_reg.so \
     vendor/sony/shinano-common/proprietary/vendor/lib/libsmemlog.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsmemlog.so \
-    vendor/sony/shinano-common/proprietary/vendor/lib/libssd.so:$(TARGET_COPY_OUT_VENDOR)/lib/libssd.so \
     vendor/sony/shinano-common/proprietary/vendor/lib/libsystem_health_mon.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsystem_health_mon.so \
-    vendor/sony/shinano-common/proprietary/vendor/lib/libtime_genoff.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtime_genoff.so \
     vendor/sony/shinano-common/proprietary/vendor/lib/libxml.so:$(TARGET_COPY_OUT_VENDOR)/lib/libxml.so \
     vendor/sony/shinano-common/proprietary/vendor/lib/soundfx/libqcbassboost.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libqcbassboost.so \
     vendor/sony/shinano-common/proprietary/vendor/lib/soundfx/libqcreverb.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libqcreverb.so \
@@ -324,5 +213,4 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     libta \
-    libTimeService \
-    TimeService
+    libtime_genoff

@@ -166,4 +166,14 @@ PRODUCT_COPY_FILES += \
     vendor/sony/z3c/proprietary/vendor/camera/SOI20BS1/streaming_ctrl.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SOI20BS1/streaming_ctrl.dat \
     vendor/sony/z3c/proprietary/vendor/camera/SOI20BS1_IMX200.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SOI20BS1_IMX200.dat \
     vendor/sony/z3c/proprietary/vendor/camera/product.dat:$(TARGET_COPY_OUT_VENDOR)/camera/product.dat \
-    vendor/sony/z3c/proprietary/vendor/camera/product_CACAO.dat:$(TARGET_COPY_OUT_VENDOR)/camera/product_CACAO.dat
+    vendor/sony/z3c/proprietary/vendor/camera/product_CACAO.dat:$(TARGET_COPY_OUT_VENDOR)/camera/product_CACAO.dat \
+    vendor/sony/z3c/proprietary/vendor/lib/libchromatix_s5k3l1yx_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l1yx_common.so \
+    vendor/sony/z3c/proprietary/vendor/lib/libchromatix_s5k3l1yx_default_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l1yx_default_video.so \
+    vendor/sony/z3c/proprietary/vendor/lib/libchromatix_s5k3l1yx_hfr_120fps.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l1yx_hfr_120fps.so \
+    vendor/sony/z3c/proprietary/vendor/lib/libchromatix_s5k3l1yx_hfr_60fps.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l1yx_hfr_60fps.so \
+    vendor/sony/z3c/proprietary/vendor/lib/libchromatix_s5k3l1yx_hfr_90fps.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l1yx_hfr_90fps.so \
+    vendor/sony/z3c/proprietary/vendor/lib/libchromatix_s5k3l1yx_liveshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l1yx_liveshot.so \
+    vendor/sony/z3c/proprietary/vendor/lib/libchromatix_s5k3l1yx_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l1yx_preview.so \
+    vendor/sony/z3c/proprietary/vendor/lib/libchromatix_s5k3l1yx_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l1yx_snapshot.so \
+    vendor/sony/z3c/proprietary/vendor/lib/libchromatix_s5k3l1yx_video_hd.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l1yx_video_hd.so \
+    vendor/sony/z3c/proprietary/vendor/lib/libchromatix_s5k3l1yx_zsl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l1yx_zsl.so
